@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/nexa/nexalight.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/nexa/nexabold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    min-width: 1700px;
+    font-family: "Nexa", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #202020;
+}
+
+.container {
+    width: 1660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HOME */
+
+.home {
+    background-image: url("../img/Background-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+.site-menu-wrapper {
+    width: 100%;
+    border-bottom: 1px solid  #bebebe;
+    margin-bottom: 45px;
+}
+
+.site-menu {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-menu li {
+    text-transform: uppercase;
+}
+
+.site-menu a:hover,
+.site-menu a:focus {
+    background-size: 330%;
+    background-position: 100%;
+    background-image: linear-gradient(135deg, transparent 0% ,  transparent 50%, rgb(56, 55, 55) 50%);
+}
+
+.site-menu a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    background-image: linear-gradient(135deg, transparent 0% ,  transparent 50%, rgb(56, 55, 55) 50%);
+    background-size: 270%;
+    transition: all .6s;
+    color: #f1f1f1;
+}
+
+.site-menu .site-link-darker {
+    color: #bebebe;
+}
+
+.home-wrapper {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-img {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.logo-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.logo-author {
+    letter-spacing: 1.5px;
+}
+
+.scroll-block {
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.scroll-text {
+    margin-bottom: 15px;
+    font-family: "Nexa";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #bebebe;
+}
+
+.scroll-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/Double_Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.scroll-icon:hover,
+.scroll-icon:focus {
+    animation-name: MoveInBottomToTop;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes MoveInBottomToTop {
+    0% {
+        top: -5px;
+    }
+
+    100% {
+        top: 5px;
+    }
+}
+/* ABOUT ME */
+
+.about-me {
+    padding-bottom: 30px;
+}
+
+.about-desc {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-photo {
+    width: 771px;
+    min-height: 700px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    width: 674px;
+    padding-right: 155px;
+}
+
+.heading-secondary {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #202020;
+    font-family: "Nexa Light";
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2.39px;
+}
+
+.heading-secondary--light {
+    margin-bottom: 70px;
+}
+
+.paragraph {
+    color: #202020;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 1.8;
+}
+
+.about-author {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+}
+
+.heading-secondary--light {
+    color: #f1f1f1;
+    letter-spacing: 6px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    background-image: url("../img/Background-portfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+
+.portfolio-content {
+    width: 1592px;
+}
+
+.portfolio-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 279px;
+    min-height: 250px;
+    margin-bottom: 50px;
+}
+
+.portfolio-work {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-popup-text {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    transition: all .8s ease;
+}
+
+.portfolio-item>a:hover .portfolio-popup-text,
+.portfolio-item>a:focus .portfolio-popup-text  {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.portfolio .heading-secondary {
+    text-align: center;
+}
+
+/* CONTACTS */
+
+.contacts-content {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.contact-group {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.contact-method {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.contact-method,
+.contact-kind {
+    color: #202020;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.contact-kind {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contact-kind a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-social-link {
+    text-indent: -9999px;
+    width: 57px;
+    height: 57px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.contact-social-link:last-child {
+    margin-right: 0;
+}
+
+.contact-social-link-fc {
+    background-position: 0 0;
+}
+
+.contact-social-link-tw {
+    background-position: -82px  0;
+}
+
+.contact-social-link-inst {
+    background-position: -164px 0;
+}
+
+.contact-copyright {
+    border-top: 1px solid #bebebe;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #bebebe;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.45px;
+}
+
+.contact-author {
+    margin: 0;
+}
